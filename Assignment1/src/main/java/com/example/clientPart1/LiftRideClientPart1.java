@@ -17,7 +17,7 @@ public class LiftRideClientPart1 {
   private static final int INITIAL_THREADS = 32;
   private static final int REQUESTS_PER_THREAD = 1000;
 
-  private static final String SERVER_URL = "http://34.217.28.9:8080/Assignment1-1.0-SNAPSHOT/skiers";
+  private static final String SERVER_URL = "http://52.33.137.135:8080/JavaServlets_war/skiers/9/seasons/2025/day/1/skier/20";
   private static final AtomicInteger successfulRequests = new AtomicInteger(0);
   private static final AtomicInteger failedRequests = new AtomicInteger(0);
 
@@ -85,6 +85,11 @@ public class LiftRideClientPart1 {
     double throughput = (double) successfulRequests.get() / (totalRunTime / 1000.0);
 
     /** Print results */
+//    System.out.println("Successful requests: " + 200000);
+//    System.out.println("Failed requests: " + 0);
+//    System.out.println("Total run time: " + 522579 + " ms");
+//    System.out.println("Total throughput: " + 398.4137287881564 + " requests/sec");
+
     System.out.println("Successful requests: " + successfulRequests.get());
     System.out.println("Failed requests: " + failedRequests.get());
     System.out.println("Total run time: " + totalRunTime + " ms");
